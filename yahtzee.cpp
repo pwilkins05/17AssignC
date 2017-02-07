@@ -14,7 +14,7 @@
  *******************************/
 
 // TODO: switch to using arrays for scores
-// TODO switch to using array for dice
+// TODO switch to using array for dice  **Finished - Ryan**
 // TODO: add yahtzee bonus score
 // TODO: implement scoring functions (see switch statement, line 125)
 // TODO: make ask reroll accept lowercase letters **FINISHED**
@@ -46,7 +46,7 @@ enum Category { ONES = 1, TWOS, THREES, FOURS, FIVES, SIXES, THREE_OF_A_KIND,
 int main()
 {
 
-    int die1, die2, die3, die4, die5;
+    int die[5];
     bool redo1, redo2, redo3, redo4, redo5;
 
     int ones, twos, threes, fours, fives, sixes;
@@ -72,13 +72,13 @@ int main()
     {
         int round = 1;
         ones = twos = threes = fours = fives = sixes = 0;
-        die1 = rand() % SIDES;
-        die2 = rand() % SIDES;
-        die3 = rand() % SIDES;
-        die4 = rand() % SIDES;
-        die5 = rand() % SIDES;
+        die[0] = rand() % SIDES;
+        die[1] = rand() % SIDES;
+        die[2] = rand() % SIDES;
+        die[3] = rand() % SIDES;
+        die[4] = rand() % SIDES;
 
-        printRoll(die1, die2, die3, die4, die5);
+        printRoll(die[0], die[1], die[2], die[3], die[4]);
 
         do
         {
@@ -90,35 +90,35 @@ int main()
 
             if (redo1)
             {
-                die1 = rand() % SIDES;
+                die[0] = rand() % SIDES;
             }
             if (redo2)
             {
-                die2 = rand() % SIDES;
+                die[1] = rand() % SIDES;
             }
             if (redo3)
             {
-                die3 = rand() % SIDES;
+                die[2] = rand() % SIDES;
             }
             if (redo4)
             {
-                die4 = rand() % SIDES;
+                die[3] = rand() % SIDES;
             }
             if (redo5)
             {
-                die5 = rand() % SIDES;
+                die[4] = rand() % SIDES;
             }
 
-            printRoll(die1, die2, die3, die4, die5);
+            printRoll(die[0], die[1], die[2], die[3], die[4]);
             round++;
         } while ((redo1 || redo2 || redo3 || redo4 || redo5) && round < 3);
 
-        ones = tabulateDice(1, die1, die2, die3, die4, die5);
-        twos = tabulateDice(2, die1, die2, die3, die4, die5);
-        threes = tabulateDice(3, die1, die2, die3, die4, die5);
-        fours = tabulateDice(4, die1, die2, die3, die4, die5);
-        fives = tabulateDice(5, die1, die2, die3, die4, die5);
-        sixes = tabulateDice(6, die1, die2, die3, die4, die5);
+        ones = tabulateDice(1, die[0], die[1], die[2], die[3], die[4]);
+        twos = tabulateDice(2, die[0], die[1], die[2], die[3], die[4]);
+        threes = tabulateDice(3, die[0], die[1], die[2], die[3], die[4]);
+        fours = tabulateDice(4, die[0], die[1], die[2], die[3], die[4]);
+        fives = tabulateDice(5, die[0], die[1], die[2], die[3], die[4]);
+        sixes = tabulateDice(6, die[0], die[1], die[2], die[3], die[4]);
 
         int scoreOption = getScoreOption(onesScore, twosScore, threesScore, foursScore,
                                          fivesScore, sixesScore, threeOfAKind,
