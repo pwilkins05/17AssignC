@@ -22,6 +22,8 @@
 
 /*I've not learned C++ and was having trouble understanding the syntax for turning the scores into arrays,
  so instead of fighting it, I'm just commenting that I attempted to change scores into arrays --Josh Garnick */
+ 
+/*Also attempted score array however I also do not understand C++ --Cody Noteboom*/
 
 using namespace std;
 
@@ -171,7 +173,7 @@ int main()
                 break;
         }*/
 		
-		/*please feel free to scrutinize if I am correct here in my logic
+		/*please feel free to scrutinize if I am correct here in my logic --Cody Noteboom
 		const string array initialScoreOption[] = {"ONES", "TWOS", "THREES", "FOURS", "FIVES", "SIXES", "THREE_OF_A_KIND", 
 		"FOUR_OF_A_KIND", "FULL_HOUSE", "SMALL_STRAIGHT", "LARGE_STRAIGHT", "YAHTZEE", "CHANCE"};
 		const string array secondaryScoreOption[] = {"ones", "twos", "threes", "fours", "fives", "sixes"};
