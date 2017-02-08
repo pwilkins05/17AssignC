@@ -13,7 +13,7 @@
  *
  *******************************/
 
-// TODO: switch to using arrays for scores
+// TODO: switch to using arrays for scores **see below switch block**
 // TODO switch to using array for dice  **Finished - Ryan**
 // TODO: add yahtzee bonus score
 // TODO: implement scoring functions (see switch statement, line 125)
@@ -22,6 +22,8 @@
 
 /*I've not learned C++ and was having trouble understanding the syntax for turning the scores into arrays,
  so instead of fighting it, I'm just commenting that I attempted to change scores into arrays --Josh Garnick */
+ 
+/*Also attempted score array however I also do not understand C++ --Cody Noteboom*/
 
 using namespace std;
 
@@ -170,6 +172,12 @@ int main()
                 chance = scoreChance(ones, twos, threes, fours, fives, sixes);
                 break;
         }*/
+		
+		/*please feel free to scrutinize if I am correct here in my logic, plan to edit to 2-dimensional array --Cody Noteboom
+		const string array initialScoreOption[] = {"ONES", "TWOS", "THREES", "FOURS", "FIVES", "SIXES", "THREE_OF_A_KIND", 
+		"FOUR_OF_A_KIND", "FULL_HOUSE", "SMALL_STRAIGHT", "LARGE_STRAIGHT", "YAHTZEE", "CHANCE"};
+		const string array secondaryScoreOption[] = {"ones", "twos", "threes", "fours", "fives", "sixes"};
+		*/
 
         printScore(onesScore, twosScore, threesScore, foursScore, fivesScore, sixesScore,
                    threeOfAKind, fourOfAKind, fullHouse, smallStraight, largeStraight, yahtzee, chance);
