@@ -28,7 +28,8 @@ int main()
     /*BUG:  Commas after spaces
       BUG:  Comma after 100  */
 
-    else if (choice == 'b')
+    //I don't know C++, but below is how I would solve this with C#
+    else if (choice == 'b') 
     {
         for (int i = 0; i <= 100; i++)
         {
@@ -40,3 +41,15 @@ int main()
 
     return 0;
 }
+
+//Josh's C# Bug fix
+else if (choice == 'b') 
+    {
+    	string output = "";
+        for (int i = 1; i <= 100; i++)
+        {
+            output += i + ", ";
+            if (i == 10)
+            	return string finalOutput = output.Substring(0, output.Length -2);
+        }
+    }
