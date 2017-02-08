@@ -20,6 +20,9 @@
 // TODO: make ask reroll accept lowercase letters **FINISHED**
 // BUG: dice not holding correct values
 
+/*I've not learned C++ and was having trouble understanding the syntax for turning the scores into arrays,
+ so instead of fighting it, I'm just commenting that I attempted to change scores into arrays --Josh Garnick */
+
 using namespace std;
 
 void printRoll(int n1, int n2, int n3, int n4, int n5);
