@@ -173,7 +173,7 @@ int main()
                 break;
         }*/
 		
-		/*please feel free to scrutinize if I am correct here in my logic --Cody Noteboom
+		/*please feel free to scrutinize if I am correct here in my logic, plan to edit to 2-dimensional array --Cody Noteboom
 		const string array initialScoreOption[] = {"ONES", "TWOS", "THREES", "FOURS", "FIVES", "SIXES", "THREE_OF_A_KIND", 
 		"FOUR_OF_A_KIND", "FULL_HOUSE", "SMALL_STRAIGHT", "LARGE_STRAIGHT", "YAHTZEE", "CHANCE"};
 		const string array secondaryScoreOption[] = {"ones", "twos", "threes", "fours", "fives", "sixes"};
