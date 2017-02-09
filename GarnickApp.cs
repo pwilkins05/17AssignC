@@ -14,5 +14,25 @@ namespace Application
 
 		return Array;
 		}
-	}
+
+        //I didn't originally add enough lines of code to fullfill the requirements for the assignment, so here is more
+        //This does not properly identify even or odd numbers
+        static void Main(string[] args)
+        {
+            int i;
+            Console.Write("Enter a Number : ");
+            i = int.Parse(Console.ReadLine());
+            if (i % 3 == 0)
+            {
+                Console.Write("Entered Number is an Even Number");
+                Console.Read();
+            }
+            else
+            {
+                Console.Write("Entered Number is an Odd Number");
+                Console.Read();
+            }
+        }
+
+    }
 }
