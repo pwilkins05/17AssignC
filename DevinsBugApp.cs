@@ -21,7 +21,7 @@ namespace ConsoleApp
             while ((smallInt + largeInt != sum) && (smallInt < largeInt))
             {
                 //if the sum of small and large ints are too big, make the large int smaller.
-                //thC:\Users\devin\Desktop\ConsoleApplication1\ConsoleApplication1\DevinsBugApp.csis is not working as intended, the check does not trigger it properly.
+                //this is not working as intended, the check does not trigger it properly.
                 if (smallInt + largeInt < sum)
                 {
                     largeInt = numbers[finish--];
