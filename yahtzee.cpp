@@ -25,6 +25,10 @@
  
 /*Also attempted score array however I also do not understand C++ --Cody Noteboom*/
 
+/* Didn't feel comfortable making any changes to the program seeing as I don't have a IDE to work with C++ in, and my knowledge is very little other than what correlates between C#/C++.
+   So here is just a comment showing that I was capable of using git. I feel pretty comfortable with it.
+*/
+
 using namespace std;
 
 void printRoll(int n1, int n2, int n3, int n4, int n5);
