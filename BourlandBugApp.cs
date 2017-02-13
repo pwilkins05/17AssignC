@@ -8,12 +8,12 @@ namespace DominoClasses
     public class Deck
     {
         private List<Domino> deck = new List<Domino>();
-// #1 Bug, Change the for loop so that 9 is max number on a domino side
+// #1 Bug, Change the for loop so that 9 is max number on a domino side - FIXED--Cody Noteboom
         public Deck()
         {
-            for (int left = 0; left <= 10; left++)
+            for (int left = 0; left <= 9; left++)
             {
-                for (int right = left; right < 10; right++)
+                for (int right = left; right < 9; right++)
                 {
                     Domino domino = new Domino(left, right);
                     deck.Add(domino);
@@ -32,11 +32,11 @@ namespace DominoClasses
                 deck[i] = temp;
             }
         }
-	// #3 Bug, Deal() should pull the first domino in the list
+	// #3 Bug, Deal() should pull the first domino in the list - FIXED--Cody Noteboom
         public Domino Deal()
         {
  
-                Domino d = deck[1];
+                Domino d = deck[0];
                 deck.RemoveAt(0);
             return d;
         }
